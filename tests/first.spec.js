@@ -23,6 +23,13 @@ test('Login', async ({page}) => {
     await page.waitForTimeout(5000);
 })
 
+test('Login', async ({page}) => {
+    await page.locator("#login2").click();
+    await page.fill("#loginusername", "madhu");
+    await page.fill("#loginpassword","madhu@123");
+    await page.click("//button[text()='Log in']");
+    await page.waitForTimeout(5000);
+})
    
 
     
