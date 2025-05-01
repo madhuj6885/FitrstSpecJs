@@ -1,0 +1,37 @@
+Playwright architecture:
+
+
+Test(Clients) => websocket = > playwright
+once connection has been established between test and playwright server through websocket, we can send back to back requests so 
+the playwright is more faster then selenium.
+it will use json protocal
+
+Playwright script:
+
+* 
+package.jsom > node project management file
+playwright.config.js > which stores the playwright configuration
+testss> all test cases are present here by default
+
+install playwright using vs code extension
+
+1> create a folder and open in vs code
+2 > click on extensions in vs code  and search playwright test for vs code
+3 > go to folder view >  command palet > search playwright> test install playwright(2) > check use javascript > 
+4> it will install automatically
+
+how to run our playwright tests
+> npx playwright test
+> by default playwright executes tests in headless mode (--headed)
+> by deafult playwright prvides html reports
+> npx playwright show-report
+
+
+
+
+
+
+
+
+
+
